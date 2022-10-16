@@ -8,6 +8,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${EUREKA_HOST:eureka.instance.hostname}:${EUREKA_PORT:server.port}/eureka/
+      #defaultZone: http://${EUREKA_HOST:eureka.instance.hostname}:${EUREKA_PORT:server.port}/eureka/ -> defaultzone exception, free marker exception https://programmerah.com/eureka-starts-abnormally-and-prompts-freemarker-template-error-38553/
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 5
