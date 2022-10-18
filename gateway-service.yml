@@ -45,6 +45,6 @@ spring:
 
         - id: ECHIPA-SERVICE
           uri:
-            lb://ECHIPAA-SERVICE
+            lb://ECHIPA-SERVICE
           predicates:
             - Path=/echipa/**      
