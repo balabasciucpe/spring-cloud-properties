@@ -13,26 +13,6 @@ eureka:
     
     
 spring:
-  #datasource:
-  #  initialization-mode: always
-  #  password: ''
-  #  url: jdbc:mysql://localhost:3306/petrea
-  #  username: root
-  #  driver-class-name: com.mysql.cj.jdbc.Driver
-  #jpa:
-  #  database-platform: org.hibernate.dialect.MySQL8Dialect
-  #  hibernate:
-  #    ddl-auto: update  
-  datasource:
-    initialization-mode: always
- #   password: ${DB_ROOT_PASSWORD:ravage123}  #no password thist time
-    url: jdbc:mysql://${DB_HOST:localhost:3306}/${DB_NAME:petrea}?createDatabaseIfNotExist=true
-    username: ${DB_ROOT_USER:root}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    hibernate:
-      ddl-auto: create-drop 
   cloud:
     gateway:
       routes:
